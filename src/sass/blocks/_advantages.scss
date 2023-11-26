@@ -1,5 +1,37 @@
 .advantages {
-    min-height: 472px;
+    padding: 69px 0 84px 0;
+    background-color: #f6f6f6;
+    &-header {
+        text-align: center;
+        font-size: 29px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
     &-icons {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+    &-icon {
+        flex: 1;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        span {
+            margin: 15px 0;
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        a {
+            color: #c70101;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
     }
 }
