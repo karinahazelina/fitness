@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Pulse</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header-logo">
@@ -58,9 +56,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="advantages">
+    <section class="advantages">
         <div class="container">
             <div class="advantages-header">
                 НАШИ ПРЕИМУЩЕСТВА
@@ -86,9 +84,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="consultation">
+    <section class="consultation">
         <div class="container">
             <h2 class="title title-left">
                 Получите бесплатную консультацию<br />по подбору пульсометра
@@ -97,14 +95,35 @@
                 Просто заполните форму заявки<br />и мы перезвоним вам в течении 10 минут
             </div>
             <form class="feed-form" action="#">
-                <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
-                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <input name="name" placeholder="Ваше имя" type="text" autocomplete="name">
+                <input name="phone" required placeholder="Ваш телефон" type="number" autocomplete="phone">
+                <input name="email" required placeholder="Ваш E-mail" type="email" autocomplete="email">
 
                 <button class="button button-submit">Заказать консультацию</button>
             </form>
         </div>
-    </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel-body">
+                <div>
+                    <img src="icons/polar_carousel.png" alt="slide">
+                </div>
+                <div>
+                    <img src="icons/polar2_carousel.png" alt="slide2">
+                </div>
+                <div>
+                    <img src="icons/polar3_carousel.png" alt="slide3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
