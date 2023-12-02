@@ -45,4 +45,22 @@ $(document).ready(function () {
 
     toggleSlide('.catalog-item-link');
     toggleSlide('.catalog-item-back');
+
+    //Modal
+
+    $('[data-modal=consultation]').on('click', function () {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal-close').on('click', function () {
+        $('.overlay, #consultation, #thanks, #order').fadeOut('fast');
+    });
+
+    $('.button-mini').each(function (i) {
+        $(this).on('click', function () {
+            $('#order .modal-descr').text(
+                $('.catalog-item-subtitle').eq(i).text()
+            );
+            $('.overlay, #order').fadeIn('slow');
+        });
+    });
 });

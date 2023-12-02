@@ -21,6 +21,7 @@
         margin: 0;
         color: #ffffff;
         font-size: 20px;
+        font-style: normal;
     }
     &-phone {
         color: #ffffff;
@@ -35,6 +36,10 @@
         gap: 25px;
         a {
             display: block;
+            transition: all 0.25s;
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
         }
     }
 }
