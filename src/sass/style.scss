@@ -1,4 +1,5 @@
 @use 'base/general';
+@use 'base/animations';
 
 @use 'blocks/titles';
 @use 'blocks/promo';
@@ -12,3 +13,5 @@
 @use 'blocks/reviews';
 @use 'blocks/footer';
 @use 'blocks/modal';
+@use 'blocks/pageup';
+
