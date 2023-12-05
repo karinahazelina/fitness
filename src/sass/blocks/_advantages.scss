@@ -23,8 +23,14 @@
             margin: 0 auto;
         }
         &-animated {
-            animation-name: heartbeat;
-            animation-duration: 2s;
+            animation: heartbeat 2s ease infinite;
+            // animation-name: heartbeat;
+            // animation-duration: 2s;
+            // animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
         }
         span {
             margin: 15px 0;
